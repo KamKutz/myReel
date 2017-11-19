@@ -1,0 +1,128 @@
+@media only screen and (orientation: landscape) {
+	body {
+		background-color: #FA8B76;
+	}
+	.port_wrap {
+		display: none;
+	}
+	.text_wrap {
+		display: none;
+	}
+
+	.land_wrap {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		.popcorn {
+			width: 50%;
+			max-width: 50%;
+			margin-left: 15%;
+			position: absolute;
+		}
+	}
+
+	.stripe_wrap {
+		width: 100%;
+		top: 80%;
+		position: absolute;
+		.stripe {
+			width: 100%;
+			height: 40px;
+			background-color: black;
+			display: flex; 
+			justify-content: center;
+			p {
+				font-size: 1.3em;
+				color: white;
+				font-family: 'Cantarell', sans-serif;
+				margin-top: 0.3rem;
+			}
+		}
+	}
+
+	.left_phone {
+		margin-top: 20%;
+		margin-left: 10%;
+		animation: swivel_left alternate infinite 1.6s;
+		width: 25%;
+	}
+
+	#phone_one {
+		transform-origin: bottom left;
+	}
+
+	#phone_two {
+		transform-origin: bottom right;
+	}
+
+	@keyframes swivel_left {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(90deg);
+		}
+	}
+
+	@keyframes swivel_right {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(90deg);
+		}
+	}
+
+
+
+	// SVG Styles
+	.cls-1 {
+	        fill: #212121;
+	      }
+
+	      .cls-2 {
+	        fill: #dbdbdb;
+	      }
+
+	      .cls-3 {
+	        fill: #bfbfbf;
+	      }
+
+	      .cls-4 {
+	        fill: #1972bc;
+	      }
+
+	      .cls-5 {
+	        fill: #7b9fd6;
+	      }
+
+	      .cls-6 {
+	        fill: #fcfcfc;
+	      }
+
+	      .cls-7 {
+	        fill: #f2380c;
+	      }
+
+	      .cls-8 {
+	        fill: #efde7d;
+	      }
+
+ 	.cls-one {
+	        fill: #212121;
+	      }
+
+	      .cls-two {
+	        fill: #b2b2b2;
+	  }
+
+	.cls-one-one {
+	        fill: #212121;
+	      }
+
+	      .cls-two-two {
+	        fill: #b2b2b2;
+	      }
+
+}
+

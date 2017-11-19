@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.manifest">
+
+<head>
+	<!-- What it tries to add as homepage app name -->
+	<title>myReel App</title>
+	<!-- META -->
+	<meta charset="utf-8">
+	<!-- Enabling our application to be able to work mobiley -->
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!-- Make the app title different from the web page title -->
+	<meta name="apple-mobile-web-app-title" content="myReel">
+
+	<!-- Disable auto phone number detection -->
+	<meta name="format-detection" content="telephone=no"> 
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- Add2Home Styling -->
+	<link rel="stylesheet" href="css/css-add2home.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- HACKS -->
+	<!-- Prevent text size change on orientation change -->
+	<style>
+		html {
+			-webkit-text-size-adjust: 100%;
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- PAGE CONTENT -->
+
+		<!-- Portrait View Start -->
+		<div class="port_wrap">
+			<div class="nav">
+				<div class="tab_one active" onclick="jmp2LocalPage('favorites.html')">
+					<img src="graphics/heart.svg" alt="Heart Icon">
+					<h4>Favorites</h4>
+				</div>
+
+				<div class="tab_two non-active" onclick="jmp2LocalPage('index.html')">
+					<img src="graphics/list.svg" alt="List Icon">
+					<h4>Watchlist</h4>
+				</div>
+
+				<div class="tab_three non-active" onclick="jmp2LocalPage('seen.html')">
+					<img src="graphics/eye.svg" alt="Eye Icon">
+					<h4>Seen</h4>
+				</div>
+			</div>
+
+
+
+
+
+
+
+			<div id="genre_button" class="genre-non-active">
+				<h3>Filter by genre</h3>
+				<img class="arrow" src="graphics/arrow.svg" alt="Arrow Icon">
+
+				<div class="contain_icons">
+					<div class="row">
+						<button class="horror"></button>
+						<button class="comedy"></button>
+						<button class="adventure"></button>
+					</div>
+					<div class="genre_text">
+						<h5>Horror</h5>
+						<h5>Comedy</h5>
+						<h5>Adventure</h5>
+					</div>
+
+					<div class="row">
+						<button class="action"></button>
+						<button class="romance"></button>
+						<button class="drama"></button>
+					</div>
+					<div class="genre_text_2">
+						<h5>Action</h5>
+						<h5>Romance</h5>
+						<h5>Drama</h5>
+					</div>
+
+					<div class="row">
+						<button class="fantasy"></button>
+						<button class="cartoon"></button>
+						<button class="sci-fi"></button>
+					</div>
+					<div class="genre_text_3">
+						<h5>Fantasy</h5>
+						<h5>Cartoon</h5>
+						<h5>Sci-Fi</h5>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+			<div class="temp_main">
+				<h2>Add a movie/show using the + below!</h2>
+			</div>
+
+
+
+
+
+
+
+
+
+			<!-- Modal trigger button -->
+			<div class="plus_wrap">
+				<svg id="myBtn" class="plus_button" xmlns="http://www.w3.org/2000/svg" width="100.82" height="100.82" viewBox="0 0 160 160">
+				  <circle class="cls-1" cx="50.41" cy="50.41" r="50.41"/>
+				  <rect class="cls-2" x="48.89" y="17.92" width="3.04" height="64.98"/>
+				  <rect class="cls-2" x="745.51" y="591.56" width="3.04" height="64.98" transform="translate(674.84 -696.63) rotate(90)"/>
+				</svg>
+			</div>
+
+			<!-- The Modal Wrap -->
+			<div id="theModal" class="modal">
+				<!-- Modal Content -->
+				<div class="modal_content_wrap">
+					<div class="input_1">
+						<h5>Movie/Show Title:</h5>
+						<input class="input_movie" type="text">
+					</div>
+
+					<div class="input_2">
+						<h5>Rating:</h5>
+						<fieldset class="rating">
+							    <input type="radio" id="star5" name="rating" value="5" />
+							    <label class = "full" for="star5" title="5 stars"></label>
+							    <input type="radio" id="star4half" name="rating" value="4 and a half" />
+							    <label class="half" for="star4half" title="4.5 stars"></label>
+							    <input type="radio" id="star4" name="rating" value="4" />
+							    <label class = "full" for="star4" title="4 stars"></label>
+							    <input type="radio" id="star3half" name="rating" value="3 and a half" />
+							    <label class="half" for="star3half" title="3.5 stars"></label>
+							    <input type="radio" id="star3" name="rating" value="3" />
+							    <label class = "full" for="star3" title="3 stars"></label>
+							    <input type="radio" id="star2half" name="rating" value="2 and a half" />
+							    <label class="half" for="star2half" title="2.5 stars"></label>
+							    <input type="radio" id="star2" name="rating" value="2" />
+							    <label class = "full" for="star2" title="2 stars"></label>
+							    <input type="radio" id="star1half" name="rating" value="1 and a half" />
+							    <label class="half" for="star1half" title="1.5 stars"></label>
+							    <input type="radio" id="star1" name="rating" value="1" />
+							    <label class = "full" for="star1" title="1 star"></label>
+							    <input type="radio" id="starhalf" name="rating" value="half" />
+							    <label class="half" for="starhalf" title="0.5 stars"></label>
+						</fieldset>
+					 </div>
+
+					<div class="input_3">
+						<h5>Review:</h5>
+						<textarea placeholder="Jot down some short thoughts about the movie/show" rows="20" name="review-box" id="review_text" cols="40" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea>
+					</div>
+
+					<div class="input_4">
+						<h5>Tag a Genre:</h5>
+						<div class="icons_modal">
+							<div class="row">
+								<button class="horror_b"></button>
+								<button class="comedy_b"></button>
+								<button class="adventure_b"></button>
+							</div>
+							<div class="genre_text">
+								<h5>Horror</h5>
+								<h5>Comedy</h5>
+								<h5>Adventure</h5>
+							</div>
+
+							<div class="row">
+								<button class="action_b"></button>
+								<button class="romance_b"></button>
+								<button class="drama_b"></button>
+							</div>
+							<div class="genre_text_2">
+								<h5>Action</h5>
+								<h5>Romance</h5>
+								<h5>Drama</h5>
+							</div>
+
+							<div class="row">
+								<button class="fantasy_b"></button>
+								<button class="cartoon_b"></button>
+								<button class="sci-fi_b"></button>
+							</div>
+							<div class="genre_text_3">
+								<h5>Fantasy</h5>
+								<h5>Cartoon</h5>
+								<h5>Sci-Fi</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="input_5">
+						<h5>Ranking:</h5>
+						<div class="section-input">
+							<label>
+								<input type="checkbox" value="Favorites">
+								<div class="box"></div>
+								<h4>Favorites</h4>
+							</label>
+							<label>
+								<input type="checkbox" value="Watchlist">
+								<div class="box"></div>
+								<h4>Watchlist</h4>
+							</label>
+							<label>
+								<input type="checkbox" value="Seen">
+								<div class="box"></div>
+								<h4>Seen</h4>
+							</label>
+						</div>
+					</div>
+
+					<div class="input_6">
+						<span class="close">&times;</span>
+						<img class="confirm" src="graphics/confirm.svg" alt="Confirmation Check">
+					</div>
+					
+				</div>
+			</div>
+
+
+
+
+
+
+		<!-- Portrait Wrap End  -->
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Portrait View End -->
+
+
+		<!-- Landscape View Start -->
+		<div class="land_wrap">
+			<svg class="popcorn" xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 800 500">
+			  <g id="Layer_5" data-name="Layer 5">
+			    <path class="cls-1" d="M831.38,225.68A153.05,153.05,0,1,0,984.44,378.73,153.05,153.05,0,0,0,831.38,225.68ZM779.47,410.84a27.29,27.29,0,1,1,27.29-27.29A27.29,27.29,0,0,1,779.47,410.84Zm58.33,59.94a30,30,0,1,1,30-30A30,30,0,0,1,837.8,470.78ZM838.88,352a30,30,0,1,1,30-30A30,30,0,0,1,838.88,352Zm60.47,58.87a27.29,27.29,0,1,1,27.29-27.29A27.29,27.29,0,0,1,899.35,410.84Z" transform="translate(-228.24 -123.17)"/>
+			    <path class="cls-1" d="M904.52,511.45s55.3-55.66,92.76,20.34c0,0,16.05,0,0-20.34S958.75,474,934.13,476.13,897.39,504,904.52,511.45Z" transform="translate(-228.24 -123.17)"/>
+			    <path class="cls-2" d="M330.48,281.34l-69.57-108.1s-22.48,8.56-23.55,15c0,0-11.77-13.91-8.56-28.9,0,0,31-17.12,33.18-16.05,0,0,106,142.35,103.82,150.91S341.18,297.39,330.48,281.34Z" transform="translate(-228.24 -123.17)"/>
+			    <path class="cls-3" d="M404,286.5s-30.83-26.76-63.64-21.83,10.38,33.08,10.38,33.08S376.76,315.49,404,286.5Z" transform="translate(-228.24 -123.17)"/>
+			    <path class="cls-4" d="M485.67,504s-20.87,8.56-79.2,8.56S326.2,504,326.2,504a12.88,12.88,0,0,1-12.84-12.84V287.76a12.88,12.88,0,0,1,12.84-12.84s13.62,3.21,78.13,3.21,81.34-3.21,81.34-3.21a12.88,12.88,0,0,1,12.84,12.84V491.12A12.88,12.88,0,0,1,485.67,504Z" transform="translate(-228.24 -123.17)"/>
+			    <rect class="cls-5" x="119.36" y="190.27" width="144.49" height="150.91"/>
+			  </g>
+			  <g id="Layer_2" data-name="Layer 2">
+			    <path class="cls-6" d="M783.22,243.88H411.82c-24.62,0-16.05,31-16.05,31C429.43,291.24,582.69,325.06,597,328.2v.23l.54-.12.54.12v-.23c14.3-3.14,167.55-37,201.22-53.28C799.27,274.91,807.84,243.88,783.22,243.88Z" transform="translate(-228.24 -123.17)"/>
+			    <path class="cls-7" d="M799.64,274.91H395.77L498.52,571.39s30,11.77,99.54,11.77,99.54-11.77,99.54-11.77v-2l74.92-216.18h0Z" transform="translate(-228.24 -123.17)"/>
+			    <path class="cls-6" d="M491,551.05s98.55,23.93,213,0l-6.42,20.34s-27.83,11.77-99.54,11.77-99.54-11.77-99.54-11.77Z" transform="translate(-228.24 -123.17)"/>
+			    <path class="cls-6" d="M433.88,274.91,538.21,579.72c7.45.95,16,1.79,25.71,2.41L458.77,274.91Z" transform="translate(-228.24 -123.17)"/>
+			    <path class="cls-6" d="M509.56,274.91,615,582.92c8.92-.26,17.06-.72,24.44-1.3l-105-306.7Z" transform="translate(-228.24 -123.17)"/>
+			    <path class="cls-6" d="M609.65,274.91H584.76L687.29,574.43a93.91,93.91,0,0,0,10.31-3v-2l6.46-18.65Z" transform="translate(-228.24 -123.17)"/>
+			    <polygon class="cls-6" points="432.51 151.74 501.53 353.35 514.05 317.23 457.4 151.74 432.51 151.74"/>
+			    <polygon class="cls-6" points="524.47 151.74 499.58 151.74 535.27 256 544.27 230.01 547.79 219.87 524.47 151.74"/>
+			    <g id="Layer_4" data-name="Layer 4">
+			      <path class="cls-8" d="M395.77,254.13s-17.12-69.12,8.56-94.81c22.48-13.91,39.6-4.28,53.52-20.34s38.53-15,59.94,0,32.11,6.42,37.46,16.05,19.27,5.35,25.69-9.63c9.63-5.35,15,5.35,21.41,4.28s7.49-11.77,24.62,0c16.05,1.07,31-32.11,42.81-25.69s50.3,8.56,57.8,9.63,28.9,36.39,30,46,37.75,34,39.75,70.54Z" transform="translate(-228.24 -123.17)"/>
+			      <line class="cls-8" x1="263.24" y1="427.91" x2="475.69" y2="427.91"/>
+			    </g>
+			  </g>
+			</svg>
+		</div>
+
+		<div class="stripe_wrap">
+			<div class="stripe"><p>Please turn your device to portrait mode</p></div>
+		</div>
+
+		<div class="left_phone_wrap">
+			<svg class="left_phone" id="Layer_6" xmlns="http://www.w3.org/2000/svg" width="200" height="110" viewBox="0 0 370 240">
+			  <path id="phone_one" class="cls-one" d="M215,33v86a12,12,0,0,1-12,12H27a12,12,0,0,1-12-12s2-12,2-43-2-43-2-43A12,12,0,0,1,27,21H203A12,12,0,0,1,215,33Z" transform="translate(-15 -21)"/>
+			  <circle class="cls-two" cx="180" cy="55" r="8"/>
+			</svg>
+		</div>
+
+		<!-- Landscape View End -->
+
+
+	<!-- JAVASCRIPT-->
+	<!-- JS to change config variables -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/js-refresh-manifest.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	    // Customize config variable BEFORE loading addToHome.js file this is how to change the parameters 
+	    var addToHomeConfig = {
+	      touchIcon: true
+	    }
+	</script>
+	<script src="js/js-add2home.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+.movie_container {
+	display: flex;
+ 	flex-wrap: wrap;
+	position: absolute;
+	margin-left: 0.5rem;
+	width: 100%;
+	top: 28%;
+	.movie {
+		display: flex; 
+		justify-content: flex-start;
+		margin: 1rem 0.5rem 0 0.5rem;
+		width: 85px;
+		height: 113px;
+		background-color: #5860CB;
+		border-radius: 15px;
+		h4 {
+			color: white;
+			font-size: 0.7em;
+			font-family: 'Cantarell', sans-serif;
+			padding-left: 0.4rem;
+			padding-right: 0.2rem;
+			margin-top: 0.5rem;
+		}
+	}
+}
+
+
+
+
+@media screen and (min-width: 374px) {
+.movie_container {
+	display: flex;
+ 	flex-wrap: wrap;
+	position: absolute;
+	margin-left: 0.8rem;
+	width: 100%;
+	top: 25%;
+	.movie {
+		display: flex; 
+		justify-content: flex-start;
+		margin: 1rem 0.5rem 0 0.5rem;
+		width: 100px;
+		height: 133px;
+		background-color: #5860CB;
+		border-radius: 15px;
+		h4 {
+			color: white;
+			font-size: 0.9em;
+			font-family: 'Cantarell', sans-serif;
+			padding-left: 0.6rem;
+			padding-right: 0.2rem;
+			margin-top: 0.5rem;
+		}
+	}
+}
+}
+
+
+
+@media screen and (min-width: 410px) {
+.movie_container {
+	display: flex;
+ 	flex-wrap: wrap;
+	position: absolute;
+	margin-left: 0.5rem;
+	width: 100%;
+	top: 23%;
+	.movie {
+		display: flex; 
+		justify-content: flex-start;
+		margin: 1rem 0.5rem 0 0.5rem;
+		width: 115px;
+		height: 153px;
+		background-color: #5860CB;
+		border-radius: 15px;
+		h4 {
+			color: white;
+			font-size: 1em;
+			font-family: 'Cantarell', sans-serif;
+			padding-left: 0.7rem;
+			padding-right: 0.2rem;
+			margin-top: 0.5rem;
+		}
+	}
+}
+}
+
+
+
+
+
+

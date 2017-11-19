@@ -1,0 +1,44 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67.68" height="67.32" viewBox="0 0 67.68 67.32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        mask: url(#mask);
+      }
+
+      .cls-3 {
+        fill: #bebebe;
+      }
+
+      .cls-4 {
+        fill: #4c4c4c;
+      }
+    </style>
+    <mask id="mask" x="0" y="0" width="67.68" height="67.32" maskUnits="userSpaceOnUse">
+      <g transform="translate(0 -0.37)">
+        <g id="mask-2">
+          <polygon id="path-1" class="cls-1" points="0 0.37 67.68 0.37 67.68 67.68 0 67.68 0 0.37"/>
+        </g>
+      </g>
+    </mask>
+  </defs>
+  <title>romance</title>
+  <g id="Page-1">
+    <g id="Filter-Feature">
+      <g id="Genres">
+        <g id="Romance">
+          <g id="Group-3">
+            <g class="cls-2">
+              <path id="Fill-1" class="cls-3" d="M33.92.37h-.08a33.66,33.66,0,1,0-.29,67.31h.29A33.66,33.66,0,1,0,33.92.37" transform="translate(0 -0.37)"/>
+            </g>
+          </g>
+          <path id="Fill-4" class="cls-4" d="M13.58,16.38a6.78,6.78,0,0,0,0,9.52l11.53,11.7L36.65,25.92a6.78,6.78,0,0,0,0-9.52,6.58,6.58,0,0,0-9.41,0l-2.12,2.15L23,16.38a6.58,6.58,0,0,0-9.4,0" transform="translate(0 -0.37)"/>
+          <path id="Fill-6" class="cls-4" d="M36.62,40.83a5.36,5.36,0,0,0,0,7.52l9.11,9.24,9.12-9.23a5.36,5.36,0,0,0,0-7.52,5.2,5.2,0,0,0-7.43,0l-1.68,1.7L44,40.83a5.19,5.19,0,0,0-7.43,0" transform="translate(0 -0.37)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
