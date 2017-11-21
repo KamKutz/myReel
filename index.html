@@ -84,9 +84,9 @@
 
 				<div class="contain_icons">
 					<div class="row">
-						<button class="horror"></button>
-						<button class="comedy"></button>
-						<button class="adventure"></button>
+						<button id="horrorBtnG_1" class="horror"></button>
+						<button id="comedyBtnG_2" class="comedy"></button>
+						<button id="adventureBtnG_3" class="adventure"></button>
 					</div>
 					<div class="genre_text">
 						<h5>Horror</h5>
@@ -95,9 +95,9 @@
 					</div>
 
 					<div class="row">
-						<button class="action"></button>
-						<button class="romance"></button>
-						<button class="drama"></button>
+						<button id="actionBtnG_4" class="action"></button>
+						<button id="romanceBtnG_5" class="romance"></button>
+						<button id="dramaBtnG_6" class="drama"></button>
 					</div>
 					<div class="genre_text_2">
 						<h5>Action</h5>
@@ -106,9 +106,9 @@
 					</div>
 
 					<div class="row">
-						<button class="fantasy"></button>
-						<button class="cartoon"></button>
-						<button class="sci-fi"></button>
+						<button id="fantasyBtnG_7" class="fantasy"></button>
+						<button id="cartoonBtnG_8" class="cartoon"></button>
+						<button id="sci-fiBtnG_9" class="sci-fi"></button>
 					</div>
 					<div class="genre_text_3">
 						<h5>Fantasy</h5>
@@ -130,8 +130,9 @@
 
 
 			<div class="movie_container">
-				
-			</div>
+				<div class="fade_bottom"></div>
+		    </div>
+			
 
 
 
@@ -255,47 +256,32 @@
 
 
 			<!-- The Modal View Wrap -->
-			<!-- <div id="theModalView" class="modal_view"> -->
+			<div id="theModalView" class="modal_view">
 				<!-- Modal View Content -->
-				<!-- <div class="modal_content_wrap_view">
-					<div class="input_1_select">
+				<div class="modal_content_wrap_view">
+					<div class="input_1_view">
 						<h5>Movie/Show Title:</h5>
 						<input class="input_movie_view" type="text">
 					</div>
 
 					<div class="input_2_view">
 						<h5>Rating:</h5>
-						<fieldset class="rating_view">
-							    <input type="radio" id="star5" name="rating" value="5" />
-							    <label class = "full_view" for="star5" title="5 stars"></label>
-							    <input type="radio" id="star4half" name="rating" value="4 and a half" />
-							    <label class="half_view" for="star4half" title="4.5 stars"></label>
-							    <input type="radio" id="star4" name="rating" value="4" />
-							    <label class = "full_view" for="star4" title="4 stars"></label>
-							    <input type="radio" id="star3half" name="rating" value="3 and a half" />
-							    <label class="half_view" for="star3half" title="3.5 stars"></label>
-							    <input type="radio" id="star3" name="rating" value="3" />
-							    <label class = "full_view" for="star3" title="3 stars"></label>
-							    <input type="radio" id="star2half" name="rating" value="2 and a half" />
-							    <label class="half_view" for="star2half" title="2.5 stars"></label>
-							    <input type="radio" id="star2" name="rating" value="2" />
-							    <label class = "full_view" for="star2" title="2 stars"></label>
-							    <input type="radio" id="star1half" name="rating" value="1 and a half" />
-							    <label class="half_view" for="star1half" title="1.5 stars"></label>
-							    <input type="radio" id="star1" name="rating" value="1" />
-							    <label class = "full_view" for="star1" title="1 star"></label>
-							    <input type="radio" id="starhalf" name="rating" value="half" />
-							    <label class="half_view" for="starhalf" title="0.5 stars"></label>
-						</fieldset>
+						<div class="star_group_view">
+							<button id="starBtn_1" class="star_1_view"></button>
+							<button id="starBtn_2" class="star_2_view"></button>
+							<button id="starBtn_3" class="star_3_view"></button>
+							<button id="starBtn_4" class="star_4_view"></button>
+							<button id="starBtn_5" class="star_5_view"></button>
+						</div>
 					 </div>
 
 					<div class="input_3_view">
 						<h5>Review:</h5>
 						<textarea placeholder="Jot down some short thoughts about the movie/show" rows="20" name="review-box"cols="40" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea>
-					</div> -->
+					</div>
 					
 					<!-- input 4 dynamically made for genre in js hide input 4 and have input 4 selected and use js to inject the html -->
-					<!-- <div class="input_4_view">
+					<div class="input_4_view">
 						<h5>Tag a Genre:</h5>
 						<div class="icons_modal_view">
 							<div class="row_view">
@@ -355,11 +341,11 @@
 					</div>
 
 					<div class="input_6_view">
-						<span class="close">&times;</span>
+						<span class="close_view">&times;</span>
 					</div>
 					
 				</div>
-			</div> -->
+			</div>
 
 
 
@@ -388,8 +374,8 @@
 		<div class="land_wrap">
 			<svg class="popcorn" xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 800 500">
 			  <g id="Layer_5" data-name="Layer 5">
-			    <path class="cls-1" d="M831.38,225.68A153.05,153.05,0,1,0,984.44,378.73,153.05,153.05,0,0,0,831.38,225.68ZM779.47,410.84a27.29,27.29,0,1,1,27.29-27.29A27.29,27.29,0,0,1,779.47,410.84Zm58.33,59.94a30,30,0,1,1,30-30A30,30,0,0,1,837.8,470.78ZM838.88,352a30,30,0,1,1,30-30A30,30,0,0,1,838.88,352Zm60.47,58.87a27.29,27.29,0,1,1,27.29-27.29A27.29,27.29,0,0,1,899.35,410.84Z" transform="translate(-228.24 -123.17)"/>
-			    <path class="cls-1" d="M904.52,511.45s55.3-55.66,92.76,20.34c0,0,16.05,0,0-20.34S958.75,474,934.13,476.13,897.39,504,904.52,511.45Z" transform="translate(-228.24 -123.17)"/>
+			    <path class="cls-1blue" d="M831.38,225.68A153.05,153.05,0,1,0,984.44,378.73,153.05,153.05,0,0,0,831.38,225.68ZM779.47,410.84a27.29,27.29,0,1,1,27.29-27.29A27.29,27.29,0,0,1,779.47,410.84Zm58.33,59.94a30,30,0,1,1,30-30A30,30,0,0,1,837.8,470.78ZM838.88,352a30,30,0,1,1,30-30A30,30,0,0,1,838.88,352Zm60.47,58.87a27.29,27.29,0,1,1,27.29-27.29A27.29,27.29,0,0,1,899.35,410.84Z" transform="translate(-228.24 -123.17)"/>
+			    <path class="cls-1blue" d="M904.52,511.45s55.3-55.66,92.76,20.34c0,0,16.05,0,0-20.34S958.75,474,934.13,476.13,897.39,504,904.52,511.45Z" transform="translate(-228.24 -123.17)"/>
 			    <path class="cls-2" d="M330.48,281.34l-69.57-108.1s-22.48,8.56-23.55,15c0,0-11.77-13.91-8.56-28.9,0,0,31-17.12,33.18-16.05,0,0,106,142.35,103.82,150.91S341.18,297.39,330.48,281.34Z" transform="translate(-228.24 -123.17)"/>
 			    <path class="cls-3" d="M404,286.5s-30.83-26.76-63.64-21.83,10.38,33.08,10.38,33.08S376.76,315.49,404,286.5Z" transform="translate(-228.24 -123.17)"/>
 			    <path class="cls-4" d="M485.67,504s-20.87,8.56-79.2,8.56S326.2,504,326.2,504a12.88,12.88,0,0,1-12.84-12.84V287.76a12.88,12.88,0,0,1,12.84-12.84s13.62,3.21,78.13,3.21,81.34-3.21,81.34-3.21a12.88,12.88,0,0,1,12.84,12.84V491.12A12.88,12.88,0,0,1,485.67,504Z" transform="translate(-228.24 -123.17)"/>

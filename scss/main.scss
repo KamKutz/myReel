@@ -29,6 +29,7 @@
 	.nav {
 		display: flex;
 		width: 100%;
+		z-index: 5;
 		position: fixed;
 		top: 0;
 		.tab_one {
@@ -36,6 +37,7 @@
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
+			z-index: 5;
 			display: flex;
 			img {
 				justify-content: center;
@@ -57,6 +59,7 @@
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
+			z-index: 5;
 			display: flex;
 			img {
 				justify-content: center;
@@ -78,6 +81,7 @@
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
+			z-index: 5;
 			display: flex;
 			img {
 				justify-content: center;
@@ -118,6 +122,7 @@
 
 	.contain_icons {
 		  display: none;
+		  z-index: 5;
 	}
 
 	@keyframes fade {
@@ -143,6 +148,7 @@
 
 
 	.contain_icons {
+		z-index: 5;
 		.genre_text {
 			h5 {
 				animation: fade 600ms  forwards ease-out 250ms;	
@@ -168,6 +174,7 @@
 		  left: 0;
 		  width: 100%;
 		  height: 100vh;
+		  z-index: 5;
 		  display: flex;
 		  flex-direction: column;
 		  margin-top: 3.5rem;
@@ -176,10 +183,39 @@
 		  	margin-bottom: 2.5rem;
 		  	margin-left: 2rem;
 		  	opacity: 0;
+		  	z-index: 5;
 		  	position: relative;
 		  	flex-direction: row;
 		  	.horror {
 				background-image: url('../graphics/horror.svg');
+				background-repeat: no-repeat;
+				background-color: #FA8B76;
+				width: 68px;
+				height: 68px;
+				border: none;
+				z-index: 5;
+				flex: 4;
+		  		display: flex;
+		  		justify-content: center;
+		  		flex-flow: column wrap
+			}
+
+			.horror_selected {
+				background-image: url('../graphics/horror_selected.svg');
+				background-repeat: no-repeat;
+				background-color: #FA8B76;
+				width: 68px;
+				height: 68px;
+				border: none;
+				z-index: 5;
+				flex: 4;
+		  		display: flex;
+		  		justify-content: center;
+		  		flex-flow: column wrap
+			}
+
+			.comedy {
+				background-image: url('../graphics/comedy.svg');
 				background-repeat: no-repeat;
 				background-color: #FA8B76;
 				width: 68px;
@@ -191,8 +227,8 @@
 		  		flex-flow: column wrap
 			}
 
-			.comedy {
-				background-image: url('../graphics/comedy.svg');
+			.comedy_selected {
+				background-image: url('../graphics/comedy_selected.svg');
 				background-repeat: no-repeat;
 				background-color: #FA8B76;
 				width: 68px;
@@ -217,8 +253,34 @@
 		  		flex-flow: column wrap
 			}
 
+			.adventure_selected {
+				background-image: url('../graphics/adventure_selected.svg');
+				background-repeat: no-repeat;
+				background-color: #FA8B76;
+				width: 68px;
+				height: 68px;
+				border: none;
+				flex: 4;
+		  		display: flex;
+		  		justify-content: center;
+		  		flex-flow: column wrap
+			}
+
 			.action {
 				background-image: url('../graphics/action.svg');
+				background-repeat: no-repeat;
+				background-color: #FA8B76;
+				width: 68px;
+				height: 68px;
+				border: none;
+				flex: 4;
+		  		display: flex;
+		  		justify-content: center;
+		  		flex-flow: column wrap
+			}
+
+			.action_selected {
+				background-image: url('../graphics/action_selected.svg');
 				background-repeat: no-repeat;
 				background-color: #FA8B76;
 				width: 68px;
@@ -243,8 +305,34 @@
 		  		flex-flow: column wrap
 			}
 
+			.romance_selected {
+				background-image: url('../graphics/romance_selected.svg');
+				background-repeat: no-repeat;
+				background-color: #FA8B76;
+				width: 68px;
+				height: 68px;
+				border: none;
+				flex: 4;
+		  		display: flex;
+		  		justify-content: center;
+		  		flex-flow: column wrap
+			}
+
 			.drama {
 				background-image: url('../graphics/drama.svg');
+				background-repeat: no-repeat;
+				background-color: #FA8B76;
+				width: 68px;
+				height: 68px;
+				border: none;
+				flex: 4;
+		  		display: flex;
+		  		justify-content: center;
+		  		flex-flow: column wrap
+			}
+
+			.drama_selected {
+				background-image: url('../graphics/drama_selected.svg');
 				background-repeat: no-repeat;
 				background-color: #FA8B76;
 				width: 68px;
@@ -269,6 +357,19 @@
 		  		flex-flow: column wrap
 			}
 
+			.fantasy_selected {
+				background-image: url('../graphics/fantasy_selected.svg');
+				background-repeat: no-repeat;
+				background-color: #FA8B76;
+				width: 68px;
+				height: 68px;
+				border: none;
+				flex: 4;
+		  		display: flex;
+		  		justify-content: center;
+		  		flex-flow: column wrap
+			}
+
 			.cartoon {
 				background-image: url('../graphics/cartoon.svg');
 				background-repeat: no-repeat;
@@ -282,8 +383,34 @@
 		  		flex-flow: column wrap
 			}
 
+			.cartoon_selected {
+				background-image: url('../graphics/cartoon_selected.svg');
+				background-repeat: no-repeat;
+				background-color: #FA8B76;
+				width: 68px;
+				height: 68px;
+				border: none;
+				flex: 4;
+		  		display: flex;
+		  		justify-content: center;
+		  		flex-flow: column wrap
+			}
+
 			.sci-fi {
 				background-image: url('../graphics/sci-fi.svg');
+				background-repeat: no-repeat;
+				background-color: #FA8B76;
+				width: 68px;
+				height: 68px;
+				border: none;
+				flex: 4;
+		  		display: flex;
+		  		justify-content: center;
+		  		flex-flow: column wrap
+			}
+
+			.sci-fi_selected {
+				background-image: url('../graphics/sci-fi_selected.svg');
 				background-repeat: no-repeat;
 				background-color: #FA8B76;
 				width: 68px;
